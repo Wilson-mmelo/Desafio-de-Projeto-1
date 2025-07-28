@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>          
+        <meta charset="UTF-8">
+        <title>Blog da Tecnologia</title>
+    </head>
+    <body>
+        <h1 id="inicio">Introdução ao HTML - Aprendendo desenvolvimento web</h1>
+        <hr />
+        <h2>Índice</h2>
+        <ul>
+            <li> <a href="#introducao">Introdução ao HTML na Prática</a></li>
+            <li> <a href="#trabalhando com formularios">Trabalhando com Formulários em HTML</a></li>
+            <li><a href="#estruturando seu html+formatacoes">Estruturando seu HTML+Formatações</a></li>
+            <li><a href="#trabalhando com midias utilizando html">Trabalhando com Mídias utilizando HTML</a></li>
+            <li><a href="#criando tabelas com html">Criando tabelas com HTML</a></li>
+            <li><a href="#entendo html semantico">Entendendo HTML Semântico</a></li>
+            <li><a href="#referencia">Referências</a></li>
+        </ul>
+        <h2 id="introducao">Introdução ao HTML na Prática</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p> HTML, ou HyperText Markup Language, é a linguagem padrão usada para criar páginas web.</p>
+        <p>Ela fornece a estrutura básica de um site, permitindo que você organize e apresente conteúdo como texto, imagens,
+            vídeos e outros elementos em um navegador</p>
+        <p>Apesar de ser uma linguagem de marcação, e não uma linguagem de programação, o HTML é fundamental para o
+            desenvolvimento web, pois define como o conteúdo é estruturado e apresentado. </p>
+        <p>O HTML utiliza tags (elementos) para definir a estrutura de uma página web, como parágrafos, títulos, listas,
+            tabelas, etc.</p>
+        <p>As tags são palavras-chave envoltas em colchetes angulares (< e>). Por exemplo, &lt; p &gt; e &lt; /p &gt; marcam
+                o início e o fim de um parágrafo. </p>
+        <p>As tags podem ter atributos, que fornecem informações adicionais sobre o elemento. Por exemplo, &lt; img
+            src="imagem.jpg" alt="Descrição da imagem" &gt; define uma imagem e seus atributos (fonte e texto alternativo)
+            src e alt são atributos. </p>
+        <p>O HTML permite dar significado (semântica) ao conteúdo da página, indicando o que cada parte representa. Por
+            exemplo, usar &lt; header &gt; para o cabeçalho, &lt; nav &gt; para a navegação, &lt; h1 &gt; para o título
+            principal, e assim por diante. </p>
+
+        <p><strong>Tags e elementos:</strong></p>
+        <p> <strong>&lt; p &gt; </strong> : Define um parágrafo.</p>
+        <p> <strong>&lt; h1 &gt;</strong> a &lt; h6 &gt; : Define títulos, com &lt; h1 &gt; sendo o título principal e &lt;
+            h6 &gt; o menor.</p>
+        <p> <strong>&lt; img &gt;</strong> : Define uma imagem, com o atributo src especificando o caminho da imagem e o
+            atributo alt fornecendo texto alternativo.</p>
+        <p> <strong>&lt; a &gt;</strong> : Define um link, com o atributo href especificando o endereço do link.</p>
+        <p> <strong>&lt; ul &gt;</strong> , &lt; ol &gt;, &lt; li &gt; : Define listas não ordenadas e ordenadas, com &lt;
+            li &gt; representando cada item da lista.</p>
+        <p> <strong>&lt; table &gt;</strong> , &lt; tr &gt;, &lt; td &gt; : Define tabelas, com &lt; tr &gt; representando
+            uma linha e &lt; td &gt; representando uma célula da tabela. </p>
+
+        <h2 id="trabalhando com formularios">Trabalhando com Formulários em HTML</h2>
+        <small><a href="#inicio">(voltar)</a></small>
+        <p>Em HTML, formulários são usados para coletar dados do usuário e enviá-los para um servidor web.</p>
+        <p>Eles são compostos por elementos como campos de entrada, rótulos, botões e caixas de seleção, todos contidos
+            dentro de uma tag &lt; form &gt;.</p>
+        <p>Para trabalhar com formulários em HTML, é importante entender como estruturá-los, quais elementos utilizar e como
+            enviar os dados coletados. </p>
+        <p><strong>Estrutura básica de um formulário HTML:</strong></p>
+        <p>Um formulário HTML é definido pela tag &lt; form &gt;, que contém todos os elementos do formulário.</p>
+
+        <p>Dentro da tag &lt; form &gt;, você pode incluir:</p>
+        <ul>
+            <li>&lt; labe &gt; : Define um rótulo para um campo de entrada, descrevendo o que o usuário deve inserir.</li>
+            <li>&lt; input &gt; : Cria campos de entrada interativos, como campos de texto, senhas, e-mails, etc. O tipo de
+                campo é definido pelo atributo type.</li>
+            <li>&lt; textarea &gt; : Permite que o usuário insira textos longos.</li>
+            <li>&lt; select &gt; : Cria menus suspensos.</li>
+            <li>&lt; button &gt; : Cria botões que podem ser usados para enviar o formulário ou realizar outras ações.</li>
+        </ul>
+
+        <p>Atributos importantes de um formulário:</p>
+        <p>action: Especifica o URL para onde os dados do formulário serão enviados. </p>
+        <p>method: Define o método HTTP para enviar os dados. Os métodos mais comuns são GET (dados na URL) e POST (dados no
+            corpo da requisição). </p>
+
+        <h2 id="estruturando seu html+formatacoes">Estruturando seu HTML+Formatações</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>A estrutura básica de um documento HTML consiste em quatro elementos principais: <strong>&lt;!DOCTYPE html &gt;,
+                &lt; html &gt;, &lt; head &gt;, e &lt; body &gt;.</strong> </p>
+        <p>O &lt; !DOCTYPE html &gt; declara o tipo de documento como HTML5, informando ao navegador como interpretá-lo. O
+            elemento &lt; html &gt; é o elemento raiz, contendo todo o conteúdo da página.</p>
+        <p>Dentro do &lt; html &gt;, temos o &lt; head &gt;, que contém informações sobre o documento, como título e
+            metadados, e o &lt; body &gt;, que contém o conteúdo visível da página, como texto, imagens e outros elementos.
+        </p>
+        <p>A formatação do texto em HTML pode ser feita através de tags como &lt; b &gt; (negrito) , &lt; i &gt; (itálico) ,
+            &lt; strong &gt; (ênfase) , &lt; em &gt; (ênfase) entre outras. </p>
+        <p>Além disso, elementos como &lt; p &gt; (parágrafo) , &lt; h1 &gt; a &lt; h6 &gt; (cabeçalhos) e outros elementos
+            estruturais ajudam a organizar o conteúdo da página de forma lógica e hierárquica. </p>
+
+        <p>Outras tags úteis:</p>
+        <ul>
+            <li>&lt; a &gt; : Define um hiperlink.</li>
+            <li>&lt; img &gt; : Insere uma imagem.</li>
+            <li>&lt; ul &gt; , &lt; ol &gt; , &lt; li &gt; : Define listas não ordenadas, ordenadas e itens de lista,
+                respectivamente.</li>
+            <li>&lt; div &gt; : Define uma seção genérica na página.</li>
+            <li>&lt; span &gt; : Define uma parte inline de um texto.</li>
+        </ul>
+
+        <h2 id="trabalhando com midias utilizando html">Trabalhando com Mídias utilizando HTML</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>O atributos de mídia são usados para modificar o comportamento ou adicionar informações extras aos elementos
+            multimídia, como imagens, áudio e vídeo. Eles fornecem detalhes sobre como o conteúdo deve ser exibido ou
+            reproduzido.</p>
+        <p>A tag &lt; img &gt; é usada para incorporar uma imagem em uma página HTML. </p>
+        <p>As imagens não são tecnicamente inseridas em uma página da web, mas sim vinculadas a páginas da web. Essa tag
+            cria um espaço de retenção para a imagem referenciada.</p>
+        <p>A tag &lt; img &gt; tem dois atributos obrigatórios: <strong>src </strong> - Especifica o caminho para a imagem e
+            <strong>alt</strong> - Especifica um texto alternativo para a imagem, se a imagem por algum motivo não puder ser
+            exibida
+        </p>
+        <p>Sempre especifique a largura e a altura de uma imagem, caso contrário a página pode piscar enquanto a imagem é
+            carregada.</p>
+        <p>Para vincular uma imagem a outro documento, basta aninhar a tag &lt; img &gt; dentro de uma tag &lt; a &gt;</p>
+
+        <p>Atributos da tag &lt; img &gt;:/p>
+        <p>width: "200", se utilizar sozinho vai escalar a imagem de forma dinâmica entre largura e altura.</p>
+        <p>height: "200", em conjunto com width vai forçar a largura e altura definido podendo distorcer a imagem.</p>
+        <p>title: quando passamos o mouse em cima mostra o titulo.</p>
+        <p>sizes: Especifica tamanhos de imagem para diferentes layouts de página.</p>
+        <p>srcset: Especifica uma lista de arquivos de imagem para usar em diferentes situações.</p>
+        <p>A tag &lt; audio &gt; é usada para incorporar conteúdo de som em um documento, como música ou outros fluxos de
+            áudio, pode contém uma ou mais tags com diferentes fontes de áudio, logo o navegador escolherá a primeira fonte
+            compatível.</p>
+        <p>A tag &lt; audio &gt; é usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outros
+            fluxos de vídeo, podendo conter uma ou mais tags com diferentes fontes de vídeo, então o navegador escolherá a
+            primeira fonte compatível.</p>
+        <p>O texto entre as tags <só> &lt; video &gt; e &lt; /video &gt;só será exibido em navegadores que não suportam o
+                elemento &lt; video &gt;.</p>
+        <p>Existem três formatos de vídeo suportados em HTML: <strong>MP4, WebM e OGG.</strong></p>
+
+        <p>Atributos tag &lt; video &gt;:</p>
+        <p>autoplay: começa o vídeo automáticamente ao carregar o navegador;</p>
+        <p>controls: mostra os botões de controle de volume, velocidade e tempo.</p>
+        <p>tag filha:</p>
+        <p>source:</p>
+        <p>atributo: src, ou seja caminho do arquivo de vídeo;</p>
+        <p> &lt; track &gt; Este elemento é usado para especificar legendas, arquivos de legenda ou outros arquivos contendo
+            texto, que devem estar visíveis quando a mídia estiver sendo reproduzida.</p>
+        <p>As trilhas são formatadas no formato WebVTT (arquivo.vtt), então é necessário além do arquivo de áudio ou vídeo,
+            mais o arquivo vtt que é a legenda.</p>
+        <p>O atributo kind com valor descriptions pode ser usado como uma narração do que acontece para acessibilidade,
+            então o texto colocado servirá de narração pelos equipamentos adaptados.</p>
+        <p>&lt; iframe &gt;A tag especifica um quadro embutido, que é usado para incorporar outro documento no documento
+            HTML atual.</p>
+
+        <h2 id="criando tabelas com html">Criando tabelas com HTML</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Tabelas são usadas para exibir dados em formato tabular, organizados em linhas e colunas, utilizando as tags &lt;
+            table &gt;, &lt; tr &gt;, &lt; td &gt;e, opcionalmente, &lt; th &gt;. </p>
+        <p>A tag &lt; table &gt; define o início e o fim da tabela, &lt;tr &gt; representa uma linha, e &lt; td &gt; define
+            uma célula de dados. </p>
+        <p> Opcionalmente, &lt; th &gt; pode ser usado para definir células de cabeçalho, comumente usadas para títulos de
+            colunas. </p>
+        <p>Estrutura básica de uma tabela HTML:</p>
+        <ul>
+            <li>&lt; table &gt : Define a tabela em si.</li>
+            <li>&lt; tr &gt; : Define uma linha na tabela. </li>
+            <li>&lt; td &gt; : Define uma célula de dados dentro de uma linha (coluna).</li>
+            <li>&lt; th &gt; (opcional) : Define uma célula de cabeçalho dentro de uma linha (coluna).</li>
+        </ul>
+        <p>Outras tags e atributos úteis:</p>
+        <ul>
+            <li>&lt; colgroup &gt; e &lt; col &gt; : Permitem definir estilos para grupos de colunas</li>
+            <li>&lt;thead &gt;, &lt; tbody &gt;, &lt; tfoot&gt; : Permitem agrupar o cabeçalho, corpo e rodapé da tabela,
+                respectivamente, para melhor organização e estilização. </li>
+            <li>&lt; colspan &gt; e &lt; rowspan &gt; : Permitem mesclar células horizontalmente e verticalmente,
+                respectivamente.</li>
+        </ul>
+
+        <h2 id="entendo html semantico">Entendendo HTML Semântico</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>HTML semântico é o uso de tags HTML que fornecem significado e estrutura ao conteúdo de uma página web, em vez de
+            simplesmente definir sua aparência.</p>
+        <p>Ao invés de usar elementos genéricos como &lt; div &gt; e &lt; span &gt; para tudo, o HTML semântico emprega tags
+            como &lt; header &gt;, &lt; nav &gt; , &lt; article &gt;, &lt; aside &gt;, &lt; footer &gt; e &lt; section &gt;,
+            que descrevem a função de cada parte do conteúdo.</p>
+        <p>Isso torna o código mais legível para desenvolvedores, facilita a indexação pelos mecanismos de busca e melhora a
+            acessibilidade para usuários com deficiência. </p>
+        <p>Embora o HTML5 tenha introduzido novas tags semânticas, o HTML semântico é suportado por todos os navegadores
+            modernos e também é compatível com versões mais antigas. </p>
+        <p>Exemplos de tags semânticas:</p>
+        <ul>
+            <li>&lt; header &gt; : Define o cabeçalho de uma página ou seção.</li>
+            <li>&lt; main &gt; : Define o conteúdo principal da página.</li>
+            <li>&lt; nav &gt; : Define uma seção de navegação.</li>
+            <li>&lt; article &gt; : Define um conteúdo independente e auto-contido, como um artigo de blog.</li>
+            <li>&lt; aside &gt; : Define conteúdo relacionado ao conteúdo principal, mas que pode ser considerado separado.
+            </li>
+            <li>&lt; footer &gt; : Define o rodapé da página ou seção.</li>
+            <li>&lt; section &gt; : Define uma seção temática da página.</li>
+        </ul>
+
+        <h2 id="referencia">Links de Referência</h2>
+        <footer>
+            <p><a href="https://www.dio.me/articles/o-que-e-html-entenda-para-que-ele-funciona" target="_blank"> Dio.me</a>
+            </p>
+            <p><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
+            <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs</a></p>
+        </footer>
+
+    </body>
+</html>
